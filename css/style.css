@@ -12,14 +12,15 @@ h1 {
     display: block;
     margin: 0 auto;
     background-color: #ffffff;
-    border: 5px solid aquamarine;
+    border: 2px solid goldenrod;
+    border-radius: 16px;
     padding: 20px 50px;
     font-size: 22px;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: aquamarine;
+    box-shadow: 0 0 10px 0 goldenrod inset, 0 0 20px 2px goldenrod;
 }
 
 div {
