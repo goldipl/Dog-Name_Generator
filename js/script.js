@@ -13,11 +13,11 @@ const prefixs = ["Wydaje mi się", "Mam wrażenie",
 
 const nameGenerator = () => {
     const indexName = Math.floor(Math.random() * names.length);
+    const indexPrefix = Math.floor(Math.random() * prefixs.length);
     div.textContent =
-        `${prefixs[Math.floor(Math.random() * prefixs.length)]}, 
+        `${prefixs[indexPrefix]}, 
         że najlepsze będzie imię`;
     span.textContent = `${names[indexName]}`;
-
 }
 
 btn.addEventListener('click', nameGenerator)
